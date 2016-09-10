@@ -1,0 +1,44 @@
+/*.fondo{
+  background-color: white;
+}*/
+body{
+  background: url(fondo.jpg) no-repeat fixed;
+  /*text-align: center;*/
+}
+/*div{
+  border:1px solid;
+}*/
+span{
+  font-family: 'Baloo Paaji', cursive;
+  font-size: 40px;
+  color: #DFEBED;
+}
+.titulos{
+  font-family: 'Averia Serif Libre', cursive;
+  color:black;
+  font-size: 25px;
+}
+.tabla{
+  border-top: 1px #DFEBED;
+}
+.registrar{
+  font-family: 'Averia Libre', cursive;
+  font-size:30px;
+  background-color:#718CA1;
+  color:white;
+}
+.campo{
+  border-top:1px solid black;
+  text-align: center;
+}
+.titulo{
+  text-align: center;
+}
+.datos{
+  width: 300px;
+  border-radius:20px;
+  border:none;
+}
+.datos2{
+  border-top:1px solid black;
+}

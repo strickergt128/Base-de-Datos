@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Averia+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body ng-controller="ejemploCtrl">
+    <div class="container">
+      <div class="row titulo">
+        <div class="col-md-12 ">
+          <span>Registrate</span>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4 fondo">
+          <div class="row datos2">
+            <div class="col-md-12">
+              <p>
+                  <p>
+                    <span class="titulos">Nombre:</span>
+                  </p>
+                  <input class="datos" ng-model="usuario.nombre">
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row datos2">
+            <div class="col-md-12">
+              <p>
+                  <p>
+                    <span class="titulos">Apellido:</span>
+                  </p>
+                <input class="datos" ng-model="usuario.apellido">
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row datos2">
+            <div class="col-md-12">
+              <p>
+                  <p>
+                    <span class="titulos">Correo Electronico:</span>
+                  </p>
+                <input class="datos" ng-model="usuario.correo" type="email">
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row datos2">
+            <div class="col-md-12">
+              <p>
+                  <p>
+                    <span class="titulos">Contraseña:</span>
+                  </p>
+                <input class="datos" ng-model="usuario.contrasenia" type="password">
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row datos2">
+            <div class="col-md-12">
+              <p>
+                <p>
+                  <span class="titulos">Contraseña:</span>
+                </p>
+                <input class="datos" ng-model="usuario.contrasenia2"  type="password">
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row campo">
+            <br>
+            <div class="col-md-12">
+              <input ng-click="guardar(usuario)" class="registrar" type="button" name="name" value="Registrarse">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+      </div>
+    </div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBDA-ULEWYpb9QH9R2fERfy1AwewoiYSJU",
+    authDomain: "mysystem-6e188.firebaseapp.com",
+    databaseURL: "https://mysystem-6e188.firebaseio.com",
+    storageBucket: "mysystem-6e188.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
